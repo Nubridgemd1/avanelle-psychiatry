@@ -1,6 +1,6 @@
-# Avenell Psychiatry — website + admin (mock)
+# Avanelle Psychiatry — website + admin (mock)
 
-Static mock for **avenellpsychiatry.com** — navy blue + green theme, psychiatry & therapy for adults (Houston, TX & telehealth). Contact: **000-000-0000**, **info@avenellpsychiatry.com**.
+Static mock for **avanellepsychiatry.com** — navy blue + green theme, psychiatry & therapy for adults (Houston, TX & telehealth). Contact: **000-000-0000**, **info@avanellepsychiatry.com**.
 
 **Shareable links (GitHub Pages):** the **main site** is the repo root; the **admin** is `admin.html`.
 
@@ -12,12 +12,12 @@ Static mock for **avenellpsychiatry.com** — navy blue + green theme, psychiatr
 | `admin.html` | Admin — **add/update blog topics**, **moderate comments**, **Marketing Kit** with editable flyers (print / save as PDF) |
 | `data.js` | Shared data layer (Supabase when configured, else localStorage) |
 
-Admin passcode (demo): **`avenell2026`** — change it anytime in the admin under **⚙️ Settings → Admin Passcode** (saved per browser).
+Admin passcode (demo): **`avanelle2026`** — change it anytime in the admin under **⚙️ Settings → Admin Passcode** (saved per browser).
 
 ## Book an Appointment → reports to the office
-The booking box **instantly emails the request to `info@avenellpsychiatry.com`** and offers a **one-tap text to 000-000-0000**.
+The booking box **instantly emails the request to `info@avanellepsychiatry.com`** and offers a **one-tap text to 000-000-0000**.
 
-- **Email (automatic):** get a free key at [web3forms.com](https://web3forms.com) registered to `info@avenellpsychiatry.com`, then set `WEB3FORMS_KEY` in `data.js`. Until then, the form shows one-click **Email** / **Text** buttons as a fallback.
+- **Email (automatic):** get a free key at [web3forms.com](https://web3forms.com) registered to `info@avanellepsychiatry.com`, then set `WEB3FORMS_KEY` in `data.js`. Until then, the form shows one-click **Email** / **Text** buttons as a fallback.
 - **Text (automatic):** a static page can't send SMS on its own. Two options:
   1. **One-tap:** after submitting, the patient taps **"Also text us these details"** → their phone texts 000-000-0000 with the details prefilled.
   2. **Fully automatic:** set `OFFICE_SMS_GATEWAY` in `data.js` to the number's carrier email-to-SMS address (e.g. `0000000000@vtext.com` for Verizon, `@txt.att.net` AT&T, `@tmomail.net` T-Mobile) — the booking email is then also CC'd to that gateway, delivering a text. (For a robust solution, wire Twilio via a small serverless function.)

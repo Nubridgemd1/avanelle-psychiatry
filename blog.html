@@ -3,12 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Blog | Avenell Psychiatry</title>
-<meta name="description" content="Helpful, compassionate reads on anxiety, depression, medication, telehealth and behavioral health from Avenell Psychiatry.">
+<title>Blog | Avanelle Psychiatry</title>
+<meta name="description" content="Helpful, compassionate reads on anxiety, depression, medication, telehealth and behavioral health from Avanelle Psychiatry.">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Avenell Psychiatry — Blog">
+<meta property="og:title" content="Avanelle Psychiatry — Blog">
 <meta property="og:description" content="Compassionate, helpful reads on mental health and behavioral care.">
-<meta property="og:image" content="https://nubridgemd1.github.io/avenell-psychiatry/assets/og-banner.png">
+<meta property="og:image" content="https://nubridgemd1.github.io/avanelle-psychiatry/assets/og-banner.png">
 <meta name="theme-color" content="#1b3f75">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Mulish:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
@@ -84,7 +84,7 @@
 <header><div class="wrap"><nav>
   <a href="index.html" class="brand">
     <svg class="mark" viewBox="0 0 60 60"><defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1b3f75"/><stop offset="1" stop-color="#12315c"/></linearGradient></defs><circle cx="30" cy="30" r="27" fill="#eef4ff"/><path d="M30 12c-9 0-15 6-15 14 0 5 3 8 3 12 0 3 3 5 6 5h1v-6c-4 0-6-3-6-7 0-6 5-10 11-10s11 4 11 10c0 4-2 7-6 7v6h1c3 0 6-2 6-5 0-4 3-7 3-12 0-8-6-14-15-14z" fill="url(#bg)"/><circle cx="30" cy="27" r="4.5" fill="#2f8f5b"/></svg>
-    <span class="bname">Resto<span>mind</span><small>Behavioral Health</small></span>
+    <span class="bname">Avan<span>elle</span><small>Psychiatry · Telehealth</small></span>
   </a>
   <div class="navlinks">
     <a href="index.html#services">Services</a>
@@ -95,7 +95,7 @@
 
 <div id="listView">
   <div class="hero"><div class="wrap">
-    <span class="eyebrow">Avenell Psychiatry Blog</span>
+    <span class="eyebrow">Avanelle Psychiatry Blog</span>
     <h1>Helpful reads for a healthier mind.</h1>
     <p>Compassionate, practical answers on anxiety, depression, medication, telehealth and more. Every topic is open for discussion — share a thought below.</p>
   </div></div>
@@ -122,7 +122,7 @@
   </div>
 </div></section></div>
 
-<footer>© 2026 Avenell Psychiatry · <a href="index.html">Home</a> · <a href="index.html#book">Book an Appointment</a> · Houston, TX &amp; Telehealth</footer>
+<footer>© 2026 Avanelle Psychiatry · <a href="index.html">Home</a> · <a href="index.html#book">Book an Appointment</a> · Houston, TX &amp; Telehealth</footer>
 <div class="toast" id="toast"></div>
 
 <script src="data.js"></script>
@@ -148,7 +148,7 @@
     });
   }
   function shareBtns(p){
-    var url=location.origin+location.pathname+'#'+p.slug, text=p.question+' — Avenell Psychiatry';
+    var url=location.origin+location.pathname+'#'+p.slug, text=p.question+' — Avanelle Psychiatry';
     return '<span class="sl">Share:</span>'+
       '<button class="sb native" onclick="nativeShare(\''+esc(url)+'\',\''+esc(p.question).replace(/'/g,"\\'")+'\')">📲 Share</button>'+
       '<a class="sb" target="_blank" rel="noopener" href="https://wa.me/?text='+encodeURIComponent(text+' '+url)+'">WhatsApp</a>'+
@@ -164,7 +164,7 @@
   function renderComments(slug){
     RMBH.getComments(slug,{approvedOnly:true}).then(function(cs){
       $('cList').innerHTML=cs.length?cs.map(function(c){
-        var staff=c.name==='Avenell Psychiatry';
+        var staff=c.name==='Avanelle Psychiatry';
         return '<div class="comment'+(staff?' staff':'')+'"><div class="ch"><div class="avatar'+(staff?' av-staff':'')+'">'+(staff?'❤':esc(initials(c.name)))+'</div><div><div class="nm">'+esc(c.name)+(staff?' <span class="staffbadge">Staff</span>':'')+'</div><div class="dt">'+when(c.created_at)+'</div></div></div><div class="tx">'+esc(c.body)+'</div></div>';
       }).join(''):'<div class="empty">Be the first to share a thought.</div>';
     });
@@ -177,7 +177,7 @@
       $('pTitle').textContent=post.question;
       $('pBody').innerHTML='<p>'+esc(post.body).replace(/\n/g,'</p><p>')+'</p>';
       $('pShare').innerHTML=shareBtns(post);
-      document.title=post.question+' | Avenell Psychiatry';
+      document.title=post.question+' | Avanelle Psychiatry';
       $('listView').style.display='none';$('postView').style.display='block';window.scrollTo(0,0);
       renderComments(post.slug);
     };
@@ -187,7 +187,7 @@
   function route(){
     var slug=location.hash.replace(/^#/,'');
     if(slug){ if(!POSTS.length){RMBH.getPosts({publishedOnly:true}).then(function(ps){POSTS=ps;openPost(slug);});} else openPost(slug); }
-    else { $('postView').style.display='none';$('listView').style.display='block';document.title='Blog | Avenell Psychiatry';renderList(); }
+    else { $('postView').style.display='none';$('listView').style.display='block';document.title='Blog | Avanelle Psychiatry';renderList(); }
   }
   window.addEventListener('hashchange',route);
   $('cForm').addEventListener('submit',function(e){

@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Admin | Avenell Psychiatry</title>
+<title>Admin | Avanelle Psychiatry</title>
 <meta name="robots" content="noindex, nofollow">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Mulish:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
@@ -85,10 +85,10 @@
 </style>
 </head>
 <body>
-<div class="gate" id="gate"><div class="box"><h1>Avenell Psychiatry Admin</h1><p>Behavioral Health</p><input type="password" id="pass" placeholder="Enter passcode" onkeydown="if(event.key==='Enter')unlock()"><button class="btn btn-blue" style="width:100%" onclick="unlock()">Enter</button><p style="margin-top:14px;font-size:11px">Demo passcode: <b>avenell2026</b></p></div></div>
+<div class="gate" id="gate"><div class="box"><h1>Avanelle Psychiatry Admin</h1><p>Behavioral Health</p><input type="password" id="pass" placeholder="Enter passcode" onkeydown="if(event.key==='Enter')unlock()"><button class="btn btn-blue" style="width:100%" onclick="unlock()">Enter</button><p style="margin-top:14px;font-size:11px">Demo passcode: <b>avanelle2026</b></p></div></div>
 
 <div class="top"><div class="wrap">
-  <div class="brand">Resto<span>mind</span> — Admin<small>Behavioral Health</small></div>
+  <div class="brand">Avan<span>elle</span> — Admin<small>Psychiatry</small></div>
   <div><a class="link" href="index.html" target="_blank">View Site ↗</a><a class="link" href="blog.html" target="_blank">Blog ↗</a><a class="link" href="#" onclick="lock();return false;">Lock</a></div>
 </div></div>
 <div class="modebar" id="modebar"></div>
@@ -181,7 +181,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
 <script src="data.js"></script>
 <script>
-  function getPass(){try{return localStorage.getItem('rmbh_pass')||'avenell2026';}catch(e){return 'avenell2026';}}
+  function getPass(){try{return localStorage.getItem('rmbh_pass')||'avanelle2026';}catch(e){return 'avanelle2026';}}
   var $=function(id){return document.getElementById(id);};
   function esc(s){return String(s==null?'':s).replace(/[&<>"]/g,function(m){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[m];});}
   function when(iso){try{return new Date(iso).toLocaleString(undefined,{month:'short',day:'numeric',hour:'numeric',minute:'2-digit'});}catch(e){return '';}}
@@ -240,7 +240,7 @@
     RMBH.getAllComments().then(function(list){
       var tb=$('cmtTable').querySelector('tbody');$('cmtEmpty').style.display=list.length?'none':'block';$('cmtTable').style.display=list.length?'':'none';
       tb.innerHTML=list.map(function(c){var st=c.status||'approved';
-        var staff=c.name==='Avenell Psychiatry';
+        var staff=c.name==='Avanelle Psychiatry';
         return '<tr><td><b>'+esc(c.name)+'</b>'+(staff?' <span style="font-size:9.5px;background:#e4f4ea;color:#237a48;padding:2px 7px;border-radius:10px;font-weight:800">STAFF REPLY</span>':'')+'</td><td>'+esc(c.body)+'</td><td style="color:#889;font-size:12px">'+esc(c.post_slug)+'</td><td style="color:#889;font-size:12px">'+when(c.created_at)+'</td><td><span class="pill '+(st==='approved'?'p-ok':'p-hid')+'">'+st+'</span></td>'+
           '<td class="row-actions" style="margin:0">'+(staff?'':'<button class="btn btn-share" style="padding:6px 11px" onclick="respondComment(\''+c.id+'\')">Respond</button>')+(st==='approved'?'<button class="btn btn-ghost" style="padding:6px 11px" onclick="cmt(\''+c.id+'\',\'hidden\')">Hide</button>':'<button class="btn btn-blue" style="padding:6px 11px" onclick="cmt(\''+c.id+'\',\'approved\')">Approve</button>')+'<button class="btn-x" onclick="delCmt(\''+c.id+'\')">Delete</button></td></tr>';
       }).join('');
@@ -265,15 +265,15 @@
   window.saveAllKit=function(){collect();RMBH.saveKit(KIT).then(function(){toast('All flyers saved ✓');});};
   window.resetKit=function(){if(confirm('Reset all flyers to defaults?'))RMBH.resetKit().then(function(){loadKit();toast('Reset');});};
   window.openFlyer=function(i){collect();window.curFlyer=i;var k=KIT[i];
-    $('flyerInner').innerHTML='<div class="fl-top '+k.theme+'"><div class="fl-brand">Avenell Psychiatry<small>BEHAVIORAL HEALTH</small></div><span class="fl-tag">'+esc(k.tag)+'</span><div class="fl-hl">'+esc(k.headline)+'</div><div class="fl-sub">'+esc(k.sub)+'</div></div>'+
-      '<div class="fl-body"><div style="font-size:14px;color:#4a5878;margin-bottom:14px"><b style="color:#0f2350">'+esc(k.title)+'</b></div><div class="fl-cta"><img class="fl-qr" src="assets/site-qr.png" alt="Scan to book"><div><b>Book your appointment today</b><div class="ph">📞 000-000-0000</div><div style="font-size:13px;color:#0f2350;font-weight:700">info@avenellpsychiatry.com</div><div style="font-size:12px;color:#8a95af;margin-top:4px">📱 Scan the code · avenellpsychiatry.com · Houston, TX &amp; Telehealth</div></div></div></div>';
+    $('flyerInner').innerHTML='<div class="fl-top '+k.theme+'"><div class="fl-brand">Avanelle Psychiatry<small>BEHAVIORAL HEALTH</small></div><span class="fl-tag">'+esc(k.tag)+'</span><div class="fl-hl">'+esc(k.headline)+'</div><div class="fl-sub">'+esc(k.sub)+'</div></div>'+
+      '<div class="fl-body"><div style="font-size:14px;color:#4a5878;margin-bottom:14px"><b style="color:#0f2350">'+esc(k.title)+'</b></div><div class="fl-cta"><img class="fl-qr" src="assets/site-qr.png" alt="Scan to book"><div><b>Book your appointment today</b><div class="ph">📞 000-000-0000</div><div style="font-size:13px;color:#0f2350;font-weight:700">info@avanellepsychiatry.com</div><div style="font-size:12px;color:#8a95af;margin-top:4px">📱 Scan the code · avanellepsychiatry.com · Houston, TX &amp; Telehealth</div></div></div></div>';
     $('viewer').classList.add('on');
   };
   window.closeViewer=function(){$('viewer').classList.remove('on');};
   $('viewer').addEventListener('click',function(e){if(e.target===$('viewer'))closeViewer();});
 
   /* ---- Share a flyer: image → native share sheet (all platforms) or link menu ---- */
-  function flyerCaption(k){return '✨ Avenell Psychiatry — '+((k&&k.headline)||'Compassionate psychiatry & therapy in Texas')+'. Book online: https://avenellpsychiatry.com  📞 000-000-0000';}
+  function flyerCaption(k){return '✨ Avanelle Psychiatry — '+((k&&k.headline)||'Compassionate psychiatry & therapy in Texas')+'. Book online: https://avanellepsychiatry.com  📞 000-000-0000';}
   window.shareFlyer=function(i){collect();openFlyer(i);setTimeout(function(){captureAndShare(KIT[i]);},450);};
   window.shareCurrentFlyer=function(){captureAndShare(KIT[window.curFlyer||0]);};
   function captureAndShare(k){
@@ -283,9 +283,9 @@
       canvas.toBlob(function(blob){
         var caption=flyerCaption(k);
         try{
-          var file=new File([blob],'avenell-'+((k&&k.id)||'flyer')+'.png',{type:'image/png'});
+          var file=new File([blob],'avanelle-'+((k&&k.id)||'flyer')+'.png',{type:'image/png'});
           if(navigator.canShare&&navigator.canShare({files:[file]})){
-            navigator.share({files:[file],text:caption,title:'Avenell Psychiatry'}).catch(function(e){if(!e||e.name!=='AbortError')openShareMenu(caption,blob);});
+            navigator.share({files:[file],text:caption,title:'Avanelle Psychiatry'}).catch(function(e){if(!e||e.name!=='AbortError')openShareMenu(caption,blob);});
             return;
           }
         }catch(e){}
@@ -294,12 +294,12 @@
     }).catch(function(){toast('Could not render image — use Print / Save PDF instead.');});
   }
   function openShareMenu(caption,blob){
-    var url=URL.createObjectURL(blob), enc=encodeURIComponent(caption), site=encodeURIComponent('https://avenellpsychiatry.com');
-    var links=[['📥 Download image','dl',url],['💬 WhatsApp','open','https://wa.me/?text='+enc],['📘 Facebook','open','https://www.facebook.com/sharer/sharer.php?u='+site],['✖ X (Twitter)','open','https://twitter.com/intent/tweet?text='+enc],['✉️ Email','open','mailto:?subject=Avenell Psychiatry%20Behavioral%20Health&body='+enc],['📋 Copy caption','copy',caption]];
+    var url=URL.createObjectURL(blob), enc=encodeURIComponent(caption), site=encodeURIComponent('https://avanellepsychiatry.com');
+    var links=[['📥 Download image','dl',url],['💬 WhatsApp','open','https://wa.me/?text='+enc],['📘 Facebook','open','https://www.facebook.com/sharer/sharer.php?u='+site],['✖ X (Twitter)','open','https://twitter.com/intent/tweet?text='+enc],['✉️ Email','open','mailto:?subject=Avanelle Psychiatry%20Behavioral%20Health&body='+enc],['📋 Copy caption','copy',caption]];
     $('ssGrid').innerHTML=links.map(function(l,i){return '<button data-ssi="'+i+'">'+l[0]+'</button>';}).join('')+'<div class="ss-note">📸 <b>Instagram:</b> tap <b>Download image</b>, then post it in the Instagram app (feed or story).</div>';
     $('shareSheet').classList.add('on');
     document.querySelectorAll('[data-ssi]').forEach(function(b){b.onclick=function(){var l=links[+b.dataset.ssi];
-      if(l[1]==='dl'){var a=document.createElement('a');a.href=l[2];a.download='avenell-flyer.png';a.click();toast('Image downloaded — attach it anywhere.');}
+      if(l[1]==='dl'){var a=document.createElement('a');a.href=l[2];a.download='avanelle-flyer.png';a.click();toast('Image downloaded — attach it anywhere.');}
       else if(l[1]==='copy'){if(navigator.clipboard)navigator.clipboard.writeText(l[2]);toast('Caption copied');}
       else{window.open(l[2],'_blank');}
     };});
@@ -313,7 +313,7 @@
       var c=all.filter(function(x){return x.id===id;})[0]; if(!c){toast('Comment not found');return;}
       var reply=prompt('Reply publicly to '+c.name+' on “'+c.post_slug+'”:',''); if(reply===null)return;
       reply=reply.trim(); if(!reply)return;
-      RMBH.addComment({post_slug:c.post_slug,name:'Avenell Psychiatry',body:'@'+c.name+' — '+reply,_silent:true}).then(function(){loadComments();toast('Reply posted ✓');});
+      RMBH.addComment({post_slug:c.post_slug,name:'Avanelle Psychiatry',body:'@'+c.name+' — '+reply,_silent:true}).then(function(){loadComments();toast('Reply posted ✓');});
     });
   };
 </script>
