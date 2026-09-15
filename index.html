@@ -3,356 +3,442 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Avanelle Psychiatry | Calm, whole-person telehealth care in Arlington, TX</title>
-<meta name="description" content="Avanelle Psychiatry — unhurried, judgment-free psychiatric care and therapy for adults, by secure telehealth across Texas. Now welcoming new patients. Call or text (972) 302-9933.">
+<title>Avanelle Psychiatry | Care that sees the whole picture</title>
+<meta name="description" content="Avanelle offers calm, evidence-informed psychiatric care that listens before it labels — private, secure telehealth for children, teens & adults across TX, ID, WA & OR.">
 <link rel="canonical" href="https://avanellepsychiatry.com/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Avanelle Psychiatry">
-<meta property="og:description" content="Room to breathe, space to heal. Calm, whole-person psychiatric care by secure telehealth across Texas.">
+<meta property="og:description" content="Care that sees the whole picture. Calm, evidence-informed psychiatric telehealth that listens before it labels.">
 <meta property="og:image" content="https://nubridgemd1.github.io/avanelle-psychiatry/assets/og-banner.png">
-<meta name="theme-color" content="#26382E">
+<meta name="theme-color" content="#1D1F21">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Mulish:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
   :root{
-    --paper:#F5F1E8; --paper2:#FBF8F1; --sand:#EFE9DB; --sagebg:#E7ECE3;
-    --ink:#2C332D; --pine:#25352B; --pine2:#33503F; --pine-deep:#1C2A21;
-    --sage:#7E9686; --clay:#A9855C; --muted:#68705F; --faint:#9AA096;
-    --line:#E2D9C7; --line2:#DED4BF; --white:#FFFFFF;
+    --pearl:#F5F2EA; --pearl2:#FBF9F3; --stone:#ECE7DB; --white:#FFFFFF;
+    --ink:#1C1E20; --ink2:#26292C; --graphite:#33373B;
+    --gold:#B4966A; --gold2:#C9B48A; --gold-soft:#EFE6D3;
+    --muted:#6C6A62; --faint:#9A968B; --line:#E4DED0; --line-d:rgba(245,242,234,.14);
     --disp:'Cormorant Garamond',Georgia,'Times New Roman',serif;
     --sans:'Mulish',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
+    --sh:0 40px 90px -50px rgba(20,22,24,.55);
+    --sh-sm:0 18px 44px -26px rgba(20,22,24,.5);
   }
   *{margin:0;padding:0;box-sizing:border-box}
   html{scroll-behavior:smooth}
   html,body{overflow-x:hidden;max-width:100%}
-  body{font-family:var(--sans);color:var(--ink);background:var(--paper);line-height:1.8;font-size:16.5px;font-weight:400;-webkit-font-smoothing:antialiased}
+  body{font-family:var(--sans);color:var(--ink);background:var(--pearl);line-height:1.8;font-size:16.5px;-webkit-font-smoothing:antialiased}
   a{color:inherit;text-decoration:none}
   img{max-width:100%;display:block}
-  .wrap{max-width:1140px;margin:0 auto;padding:0 34px}
-  .narrow{max-width:760px;margin-left:auto;margin-right:auto}
-  h1,h2,h3,h4,.disp{font-family:var(--disp);font-weight:500;color:var(--pine);letter-spacing:.005em}
-  h1{font-weight:500}
-  h2{font-size:clamp(30px,4.4vw,50px);line-height:1.1;font-weight:500}
-  h3{font-weight:500}
-  .eyebrow{font-family:var(--sans);font-size:11px;letter-spacing:.34em;text-transform:uppercase;font-weight:700;color:var(--clay)}
+  .wrap{max-width:1160px;margin:0 auto;padding:0 34px}
+  .narrow{max-width:770px;margin-left:auto;margin-right:auto}
+  h1,h2,h3,h4,.disp{font-family:var(--disp);font-weight:500;color:var(--ink);letter-spacing:.005em}
+  h2{font-size:clamp(30px,4.4vw,50px);line-height:1.1}
+  .eyebrow{font-family:var(--sans);font-size:11px;letter-spacing:.34em;text-transform:uppercase;font-weight:700;color:var(--gold)}
   .lead{font-size:18px;color:var(--muted);font-weight:400}
-  .sec{padding:118px 0}
-  @media(max-width:700px){.sec{padding:78px 0}}
+  .sec{padding:112px 0}
+  @media(max-width:700px){.sec{padding:74px 0}}
   .center{text-align:center}
-  .rule{width:44px;height:1px;background:var(--clay);margin:20px 0}
+  .rule{width:46px;height:1px;background:var(--gold);margin:20px 0}
   .center .rule{margin:20px auto}
 
-  .btn{display:inline-flex;align-items:center;gap:10px;font-family:var(--sans);font-weight:600;font-size:14px;letter-spacing:.02em;border-radius:2px;padding:16px 30px;cursor:pointer;border:1px solid transparent;transition:background .25s ease,color .25s ease,border-color .25s ease}
-  .btn-pine{background:var(--pine);color:#F3EFE6}
-  .btn-pine:hover{background:var(--pine2)}
-  .btn-line{background:transparent;color:var(--pine);border-color:var(--line2)}
-  .btn-line:hover{border-color:var(--pine)}
-  .tlink{display:inline-flex;align-items:center;gap:9px;font-weight:600;font-size:14px;color:var(--pine);letter-spacing:.02em;border-bottom:1px solid var(--clay);padding-bottom:3px}
-  .tlink:hover{color:var(--clay)}
+  .btn{display:inline-flex;align-items:center;gap:10px;font-family:var(--sans);font-weight:600;font-size:14px;letter-spacing:.02em;border-radius:3px;padding:16px 30px;cursor:pointer;border:1px solid transparent;transition:transform .2s ease,box-shadow .2s ease,background .25s ease}
+  .btn-ink{background:linear-gradient(180deg,#2A2D30,#1C1E20);color:var(--pearl);box-shadow:0 14px 30px -14px rgba(20,22,24,.7),inset 0 1px 0 rgba(255,255,255,.08)}
+  .btn-ink:hover{transform:translateY(-2px)}
+  .btn-gold{background:linear-gradient(180deg,var(--gold2),var(--gold));color:#25211A;box-shadow:0 14px 30px -14px rgba(180,150,106,.75),inset 0 1px 0 rgba(255,255,255,.45)}
+  .btn-gold:hover{transform:translateY(-2px)}
+  .btn-line{background:transparent;color:var(--ink);border-color:var(--line);}
+  .btn-line:hover{border-color:var(--ink)}
+  .tlink{display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:13.5px;color:var(--ink);letter-spacing:.02em;border-bottom:1px solid var(--gold);padding-bottom:3px}
+  .tlink:hover{color:var(--gold)}
+
+  /* announcement bar */
+  .anno{background:var(--ink);color:rgba(245,242,234,.82);font-size:12px;letter-spacing:.04em}
+  .anno .wrap{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;padding:9px 34px;text-align:center}
+  .anno b{color:var(--gold2);font-weight:700}
 
   /* header */
-  header{position:sticky;top:0;z-index:60;background:rgba(245,241,232,.9);border-bottom:1px solid rgba(226,217,199,.7)}
-  nav{display:flex;align-items:center;justify-content:space-between;height:84px}
+  header{position:sticky;top:0;z-index:60;background:rgba(245,242,234,.9);border-bottom:1px solid rgba(228,222,208,.7)}
+  nav{display:flex;align-items:center;justify-content:space-between;height:82px}
   .brand{display:flex;flex-direction:column;line-height:1}
-  .brand .bn{font-family:var(--disp);font-size:27px;font-weight:600;color:var(--pine);letter-spacing:.01em}
-  .brand small{font-family:var(--sans);font-size:9px;letter-spacing:.36em;color:var(--clay);font-weight:700;margin-top:5px;text-transform:uppercase}
-  .navlinks{display:flex;gap:36px;align-items:center}
-  .navlinks a{font-size:13px;font-weight:600;color:var(--pine);letter-spacing:.06em;text-transform:uppercase}
-  .navlinks a:hover{color:var(--clay)}
+  .brand .bn{font-family:var(--disp);font-size:27px;font-weight:600;color:var(--ink);letter-spacing:.01em}
+  .brand small{font-family:var(--sans);font-size:9px;letter-spacing:.36em;color:var(--gold);font-weight:700;margin-top:5px;text-transform:uppercase}
+  .navlinks{display:flex;gap:34px;align-items:center}
+  .navlinks a{font-size:12.5px;font-weight:600;color:var(--ink);letter-spacing:.07em;text-transform:uppercase}
+  .navlinks a:hover{color:var(--gold)}
   .navcta{display:flex;align-items:center;gap:22px}
-  .navphone{font-weight:600;color:var(--pine);font-size:14px;letter-spacing:.02em;white-space:nowrap}
-  @media(max-width:960px){.navlinks,.navphone{display:none}}
+  .navphone{font-weight:600;color:var(--ink);font-size:14px;white-space:nowrap}
+  @media(max-width:980px){.navlinks,.navphone{display:none}}
   .navphone-m{display:none}
-  #menuBtn i{position:relative;display:block;width:22px;height:1.5px;background:var(--pine)}
-  #menuBtn i:before,#menuBtn i:after{content:"";position:absolute;left:0;width:22px;height:1.5px;background:var(--pine)}
+  #menuBtn i{position:relative;display:block;width:22px;height:1.5px;background:var(--ink)}
+  #menuBtn i:before,#menuBtn i:after{content:"";position:absolute;left:0;width:22px;height:1.5px;background:var(--ink)}
   #menuBtn i:before{top:-7px}#menuBtn i:after{top:7px}
-  @media(max-width:960px){
+  @media(max-width:980px){
     .navcta .btn{display:none}
-    .navlinks{position:absolute;left:0;right:0;top:100%;background:var(--paper2);border-bottom:1px solid var(--line);flex-direction:column;gap:0;align-items:stretch;padding:6px 0;display:none;box-shadow:0 24px 50px -30px rgba(28,42,33,.5)}
+    .navlinks{position:absolute;left:0;right:0;top:100%;background:var(--pearl2);border-bottom:1px solid var(--line);flex-direction:column;gap:0;align-items:stretch;padding:6px 0;display:none;box-shadow:0 26px 50px -30px rgba(20,22,24,.5)}
     header.open .navlinks{display:flex}
-    .navlinks a{width:100%;text-align:center;padding:16px 20px;font-size:13px;border-bottom:1px solid var(--line)}
+    .navlinks a{width:100%;text-align:center;padding:16px 20px;font-size:12.5px;border-bottom:1px solid var(--line)}
     .navlinks a:last-child{border-bottom:none}
-    .navphone-m{display:block;color:var(--pine);font-weight:700}
+    .navphone-m{display:block;color:var(--ink);font-weight:700}
   }
 
   /* hero */
-  .hero-grid{display:grid;grid-template-columns:1.06fr .94fr;gap:70px;align-items:center;padding:80px 0 96px}
-  .hero .kick{display:inline-block;color:var(--clay);font-size:11px;letter-spacing:.3em;text-transform:uppercase;font-weight:700}
-  .hero h1{font-size:clamp(46px,7.2vw,88px);line-height:1.0;font-weight:500;margin:26px 0 0;color:var(--pine)}
-  .hero h1 em{font-style:italic;font-weight:500;color:var(--clay)}
-  .hero .lead{margin:30px 0 36px;max-width:40ch;font-size:18.5px}
-  .hero-cta{display:flex;gap:28px;align-items:center;flex-wrap:wrap}
-  .hero-media .frame{border-radius:50% 50% 4px 4px/32% 32% 3px 3px;overflow:hidden;aspect-ratio:4/4.7;border:1px solid var(--line2);box-shadow:0 40px 90px -50px rgba(28,42,33,.5)}
+  .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:66px;align-items:center;padding:78px 0 92px}
+  .hero .kick{color:var(--gold);font-size:11px;letter-spacing:.3em;text-transform:uppercase;font-weight:700}
+  .hero h1{font-size:clamp(44px,6.6vw,82px);line-height:1.02;font-weight:500;margin:24px 0 0;color:var(--ink)}
+  .hero h1 em{font-style:italic;font-weight:500;color:var(--gold)}
+  .hero .lead{margin:28px 0 30px;max-width:44ch;font-size:18px}
+  .serve{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:34px}
+  .serve span{font-size:12.5px;font-weight:600;color:var(--ink2);background:var(--white);border:1px solid var(--line);border-radius:999px;padding:8px 16px;box-shadow:var(--sh-sm)}
+  .serve span b{color:var(--gold);font-weight:700}
+  .hero-cta{display:flex;gap:26px;align-items:center;flex-wrap:wrap}
+  .hero-media{position:relative}
+  .hero-media .frame{border-radius:50% 50% 4px 4px/32% 32% 3px 3px;overflow:hidden;aspect-ratio:4/4.7;border:1px solid var(--line);box-shadow:var(--sh);position:relative}
   .hero-media .frame img{width:100%;height:100%;object-fit:cover}
+  .hero-media .frame:after{content:"";position:absolute;inset:0;background:linear-gradient(150deg,rgba(255,255,255,.22),transparent 42%);pointer-events:none}
   .hero-media .cap{margin-top:16px;font-family:var(--disp);font-style:italic;font-size:17px;color:var(--muted);text-align:center}
-  @media(max-width:900px){.hero-grid{grid-template-columns:1fr;gap:44px;padding:52px 0 70px}.hero-media{max-width:420px;margin:0 auto}}
+  @media(max-width:900px){.hero-grid{grid-template-columns:1fr;gap:44px;padding:50px 0 66px}.hero-media{max-width:420px;margin:0 auto}}
 
   /* philosophy */
-  .philo{border-top:1px solid var(--line);background:var(--paper2)}
-  .philo h2{font-size:clamp(28px,3.8vw,44px);line-height:1.24;font-weight:400}
-  .philo h2 em{font-style:italic;color:var(--pine2)}
-  .philo p{margin-top:26px;color:var(--muted);font-size:17.5px}
+  .philo{background:var(--pearl2);border-top:1px solid var(--line)}
+  .philo-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:66px;align-items:center}
+  .philo h2{font-size:clamp(28px,3.8vw,44px);line-height:1.16;font-weight:500}
+  .philo p{margin-top:22px;color:var(--muted);font-size:17px}
+  .philo-media{overflow:hidden;border-radius:3px;aspect-ratio:5/4.4;border:1px solid var(--line);box-shadow:var(--sh);position:relative}
+  .philo-media img{width:100%;height:100%;object-fit:cover}
+  .philo-media:after{content:"";position:absolute;inset:0;background:linear-gradient(150deg,rgba(255,255,255,.18),transparent 40%);pointer-events:none}
+  @media(max-width:860px){.philo-grid{grid-template-columns:1fr;gap:38px}.philo-media{order:-1;max-width:480px;margin:0 auto}}
 
-  /* approach */
-  .appr .head{max-width:620px}
-  .cols{display:grid;grid-template-columns:repeat(3,1fr);margin-top:56px;border-top:1px solid var(--line)}
-  .col{padding:40px 34px 8px 0;border-right:1px solid var(--line)}
-  .col:last-child{border-right:none;padding-right:0}
-  .col .n{font-family:var(--disp);font-style:italic;font-size:19px;color:var(--clay)}
-  .col h3{font-size:26px;margin:8px 0 10px;font-weight:500}
-  .col p{color:var(--muted);font-size:15.5px}
-  @media(max-width:820px){.cols{grid-template-columns:1fr;border-top:none}.col{border-right:none;border-top:1px solid var(--line);padding:34px 0 6px}}
-
-  /* care / services */
-  .care{background:var(--paper2);border-top:1px solid var(--line)}
-  .svc{display:grid;grid-template-columns:1fr 1fr;gap:0 60px;margin-top:52px}
-  .svc .item{padding:30px 0;border-top:1px solid var(--line)}
-  .svc .item h3{font-size:23px;font-weight:500;margin-bottom:6px}
-  .svc .item p{color:var(--muted);font-size:15.5px}
+  /* services */
+  .svc{display:grid;grid-template-columns:1fr 1fr;gap:0 64px;margin-top:54px}
+  .svc .item{padding:34px 0;border-top:1px solid var(--line);display:grid;grid-template-columns:auto 1fr;gap:22px;align-items:start}
+  .svc .no{font-family:var(--disp);font-style:italic;font-size:26px;color:var(--gold);line-height:1}
+  .svc h3{font-size:25px;font-weight:500;margin-bottom:6px}
+  .svc p{color:var(--muted);font-size:15.5px;margin-bottom:12px}
   @media(max-width:760px){.svc{grid-template-columns:1fr;gap:0}}
-  .focus{margin-top:46px;text-align:center;color:var(--muted);font-size:15px}
-  .focus b{color:var(--pine);font-weight:600}
 
-  /* telehealth */
-  .tele-grid{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center}
-  .tele-media{overflow:hidden;border-radius:3px;aspect-ratio:5/4.3;border:1px solid var(--line2);box-shadow:0 40px 90px -55px rgba(28,42,33,.5)}
-  .tele-media img{width:100%;height:100%;object-fit:cover}
-  .steps{margin-top:30px;border-top:1px solid var(--line)}
-  .step{display:flex;gap:22px;align-items:baseline;padding:22px 0;border-bottom:1px solid var(--line)}
-  .step .n{font-family:var(--disp);font-style:italic;font-size:22px;color:var(--clay);flex:none;width:34px}
-  .step h4{font-size:19px;font-weight:500;margin-bottom:1px}
-  .step p{color:var(--muted);font-size:15px}
-  @media(max-width:860px){.tele-grid{grid-template-columns:1fr;gap:40px}.tele-media{order:-1;max-width:460px;margin:0 auto}}
+  /* prescribing — glossy dark */
+  .dark{position:relative;color:#EDE9DF;background:radial-gradient(130% 120% at 82% -20%,#34383C 0%,#1C1E20 58%);overflow:hidden}
+  .dark:before{content:"";position:absolute;right:-140px;top:-120px;width:420px;height:420px;border-radius:50%;background:radial-gradient(circle,rgba(201,180,138,.16),transparent 68%);pointer-events:none}
+  .dark h2,.dark h3,.dark h4{color:#F3EFE5}
+  .dark .eyebrow{color:var(--gold2)}
+  .dark .lead{color:rgba(237,233,223,.72)}
+  .rx-quote{font-family:var(--disp);font-style:italic;font-size:clamp(22px,3vw,30px);line-height:1.4;color:#F5F1E7;max-width:900px;margin:26px auto 0;text-align:center}
+  .rx-quote .mk{color:var(--gold2)}
+  .principles{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:58px;border-top:1px solid var(--line-d)}
+  .principle{padding:34px 26px 6px 0;border-right:1px solid var(--line-d)}
+  .principle:last-child{border-right:none;padding-right:0}
+  .principle .no{font-family:var(--disp);font-style:italic;font-size:19px;color:var(--gold2)}
+  .principle h4{font-size:20px;font-weight:500;margin:8px 0 8px}
+  .principle p{color:rgba(237,233,223,.68);font-size:14.5px}
+  @media(max-width:820px){.principles{grid-template-columns:1fr;border-top:none}.principle{border-right:none;border-top:1px solid var(--line-d);padding:30px 0 6px}}
 
-  /* interlude / testimonial over image */
-  .band{position:relative;min-height:56vh;display:flex;align-items:center;justify-content:center;text-align:center;overflow:hidden}
-  .band img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-  .band .veil{position:absolute;inset:0;background:linear-gradient(180deg,rgba(28,42,33,.42),rgba(28,42,33,.58))}
-  .band .inner{position:relative;max-width:800px;padding:96px 34px;color:#F3EFE6}
-  .band .q{font-family:var(--disp);font-weight:400;font-style:italic;font-size:clamp(24px,3.4vw,38px);line-height:1.36;color:#F6F2E9}
-  .band .by{margin-top:26px;font-size:11px;letter-spacing:.32em;text-transform:uppercase;color:rgba(243,239,230,.72);font-weight:700}
+  /* conditions */
+  .cond .chips{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;max-width:820px;margin:34px auto 0}
+  .cond .chips span{background:var(--white);border:1px solid var(--line);border-radius:999px;padding:12px 24px;font-size:15px;font-weight:600;color:var(--ink);box-shadow:var(--sh-sm)}
 
   /* provider */
-  .prov-grid{display:grid;grid-template-columns:280px 1fr;gap:64px;align-items:center}
-  .prov-photo{width:280px;height:346px;border-radius:50% 50% 4px 4px/32% 32% 3px 3px;background:linear-gradient(165deg,#9DB2A3,#33503F);display:flex;align-items:center;justify-content:center;border:1px solid var(--line2);box-shadow:0 40px 90px -55px rgba(28,42,33,.5)}
-  .prov-photo span{font-family:var(--disp);font-size:110px;color:#F3EFE6;font-weight:400}
+  .prov{background:var(--pearl2);border-top:1px solid var(--line)}
+  .prov-grid{display:grid;grid-template-columns:296px 1fr;gap:64px;align-items:center}
+  .prov-photo{width:296px;height:366px;border-radius:50% 50% 4px 4px/32% 32% 3px 3px;background:radial-gradient(120% 120% at 30% 20%,#3A3E42,#1C1E20);display:flex;align-items:center;justify-content:center;border:1px solid var(--gold);box-shadow:var(--sh);position:relative}
+  .prov-photo span{font-family:var(--disp);font-size:96px;color:var(--gold2);font-weight:400;letter-spacing:.04em}
+  .prov-photo:after{content:"";position:absolute;inset:0;border-radius:inherit;background:linear-gradient(150deg,rgba(255,255,255,.1),transparent 40%);pointer-events:none}
   .prov h3{font-size:33px;font-weight:500;margin-top:8px}
-  .prov .cred{color:var(--clay);font-weight:600;font-size:12px;letter-spacing:.14em;text-transform:uppercase;margin:8px 0 18px}
+  .prov .cred{color:var(--gold);font-weight:600;font-size:12px;letter-spacing:.14em;text-transform:uppercase;margin:8px 0 18px}
   .prov p{color:var(--muted);margin-bottom:14px}
-  .prov .tags{margin:20px 0 26px;color:var(--muted);font-size:14.5px}
-  .prov .tags b{color:var(--pine);font-weight:600}
-  @media(max-width:820px){.prov-grid{grid-template-columns:1fr;text-align:center;gap:34px;justify-items:center}.prov-photo{width:220px;height:272px}}
+  .prov .creds{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+  .prov .creds span{background:var(--stone);color:var(--ink);border-radius:999px;padding:8px 16px;font-size:13px;font-weight:600}
+  @media(max-width:820px){.prov-grid{grid-template-columns:1fr;text-align:center;gap:34px;justify-items:center}.prov-photo{width:224px;height:278px}.prov .creds{justify-content:center}}
+
+  /* faq */
+  .faq-wrap{max-width:800px;margin:48px auto 0}
+  details{border-top:1px solid var(--line);padding:6px 0}
+  details:last-child{border-bottom:1px solid var(--line)}
+  summary{list-style:none;cursor:pointer;padding:24px 44px 24px 0;position:relative;font-family:var(--disp);font-size:23px;font-weight:500;color:var(--ink)}
+  summary::-webkit-details-marker{display:none}
+  summary:after{content:"+";position:absolute;right:6px;top:22px;font-family:var(--sans);font-size:24px;font-weight:300;color:var(--gold);transition:transform .25s ease}
+  details[open] summary:after{content:"–"}
+  details p{color:var(--muted);font-size:15.5px;padding:0 40px 24px 0}
 
   /* booking */
-  .book-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:start}
-  .contact-card{background:var(--pine);color:#F3EFE6;border-radius:3px;padding:44px 40px}
-  .contact-card h3{color:#F6F2E9;font-size:30px;font-weight:500;margin-bottom:6px}
-  .contact-card .sub{color:rgba(243,239,230,.72);font-size:15px;margin-bottom:26px}
-  .contact-card .r{display:flex;gap:16px;align-items:flex-start;padding:14px 0;border-top:1px solid rgba(243,239,230,.14);font-size:16px}
+  .book-grid{display:grid;grid-template-columns:.92fr 1.08fr;gap:52px;align-items:start}
+  .contact-card{position:relative;overflow:hidden;color:#EDE9DF;border-radius:4px;padding:44px 40px;background:radial-gradient(130% 120% at 85% -10%,#34383C,#1C1E20 62%)}
+  .contact-card:before{content:"";position:absolute;right:-90px;top:-90px;width:280px;height:280px;border-radius:50%;background:radial-gradient(circle,rgba(201,180,138,.16),transparent 68%)}
+  .contact-card h3{color:#F3EFE5;font-size:29px;font-weight:500;margin-bottom:6px;position:relative}
+  .contact-card .sub{color:rgba(237,233,223,.72);font-size:15px;margin-bottom:24px;position:relative}
+  .contact-card .r{display:flex;gap:16px;align-items:flex-start;padding:13px 0;border-top:1px solid var(--line-d);font-size:15.5px;position:relative}
   .contact-card .r:first-of-type{border-top:none}
-  .contact-card .r .k{color:rgba(243,239,230,.6);font-size:11px;letter-spacing:.2em;text-transform:uppercase;font-weight:700;width:74px;flex:none;padding-top:4px}
-  .contact-card .r a{color:#F3EFE6;font-weight:500}.contact-card .r a:hover{color:#CBD8CD}
-  .contact-card .crisis{color:rgba(243,239,230,.6);font-size:12.5px;margin-top:22px;line-height:1.6}
-  .form-card{background:var(--white);border:1px solid var(--line);border-radius:3px}
-  .form-head{padding:30px 36px 22px}
+  .contact-card .r .k{color:var(--gold2);font-size:11px;letter-spacing:.18em;text-transform:uppercase;font-weight:700;width:66px;flex:none;padding-top:4px}
+  .contact-card .r a{color:#F3EFE5;font-weight:500}.contact-card .r a:hover{color:var(--gold2)}
+  .contact-card .crisis{color:rgba(237,233,223,.6);font-size:12.5px;margin-top:22px;line-height:1.6;position:relative}
+  .form-card{background:var(--white);border:1px solid var(--line);border-radius:4px;box-shadow:var(--sh-sm)}
+  .form-head{padding:30px 36px 20px;border-bottom:1px solid var(--line)}
   .form-head h3{font-size:27px;font-weight:500}
   .form-head p{color:var(--muted);font-size:14px;margin-top:2px}
-  .form-body{padding:6px 36px 34px}
+  .form-body{padding:24px 36px 34px}
   .fld{margin-bottom:17px}
   .fld label{display:block;font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:8px}
-  .fld label .req{color:var(--clay)}
-  .fld input,.fld select,.fld textarea{width:100%;font-family:var(--sans);font-size:15px;color:var(--ink);background:var(--paper2);border:1px solid var(--line2);border-radius:2px;padding:13px 15px;transition:border .15s,box-shadow .15s}
-  .fld input:focus,.fld select:focus,.fld textarea:focus{outline:none;border-color:var(--sage);box-shadow:0 0 0 3px rgba(126,150,134,.16);background:var(--white)}
+  .fld label .req{color:var(--gold)}
+  .fld input,.fld select,.fld textarea{width:100%;font-family:var(--sans);font-size:15px;color:var(--ink);background:var(--pearl2);border:1px solid var(--line);border-radius:3px;padding:13px 15px;transition:border .15s,box-shadow .15s}
+  .fld input:focus,.fld select:focus,.fld textarea:focus{outline:none;border-color:var(--gold);box-shadow:0 0 0 3px rgba(180,150,106,.16);background:var(--white)}
   .fld textarea{resize:vertical;min-height:84px}
   .frow{display:grid;grid-template-columns:1fr 1fr;gap:16px}
   @media(max-width:540px){.frow{grid-template-columns:1fr}}
   .consent{display:flex;gap:11px;align-items:flex-start;font-size:12.5px;color:var(--muted);margin:10px 0 20px;line-height:1.6}
-  .consent input{margin-top:3px;accent-color:var(--pine);width:auto;flex:none}
+  .consent input{margin-top:3px;accent-color:var(--ink);width:auto;flex:none}
   .book-note{font-size:12px;color:var(--faint);text-align:center;margin-top:16px}
   #book-ok{display:none;text-align:center;padding:30px 20px}
-  #book-ok h4{font-size:26px;font-weight:500;color:var(--pine);margin-bottom:8px}
+  #book-ok h4{font-size:26px;font-weight:500;color:var(--ink);margin-bottom:8px}
   #book-ok .actions{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:20px}
   @media(max-width:860px){.book-grid{grid-template-columns:1fr;gap:30px}}
 
   /* footer */
-  footer{background:var(--pine-deep);color:rgba(243,239,230,.7)}
-  .foot-grid{display:grid;grid-template-columns:1.6fr 1fr 1.2fr;gap:44px;padding:72px 0 34px}
-  footer .bn{font-family:var(--disp);font-size:26px;color:#F3EFE6;font-weight:600}
-  footer .bn small{display:block;font-family:var(--sans);font-size:9px;letter-spacing:.34em;color:var(--sage);font-weight:700;margin-top:6px;text-transform:uppercase}
-  footer p{font-size:14px;margin-top:18px;max-width:32ch;color:rgba(243,239,230,.6);line-height:1.8}
-  footer h4{font-family:var(--sans);font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--sage);margin-bottom:18px;font-weight:700}
-  footer ul{list-style:none;display:grid;gap:13px}
-  footer a{color:rgba(243,239,230,.78);font-size:14px}footer a:hover{color:#F3EFE6}
-  .foot-btm{border-top:1px solid rgba(243,239,230,.12);padding:22px 0;font-size:12px;color:rgba(243,239,230,.45);display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+  footer{background:var(--ink);color:rgba(237,233,223,.66)}
+  .foot-grid{display:grid;grid-template-columns:1.6fr 1fr 1.2fr;gap:44px;padding:70px 0 32px}
+  footer .bn{font-family:var(--disp);font-size:26px;color:#F3EFE5;font-weight:600}
+  footer .bn small{display:block;font-family:var(--sans);font-size:9px;letter-spacing:.34em;color:var(--gold2);font-weight:700;margin-top:6px;text-transform:uppercase}
+  footer p{font-size:13.5px;margin-top:18px;max-width:34ch;color:rgba(237,233,223,.55);line-height:1.8}
+  footer h4{font-family:var(--sans);font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold2);margin-bottom:18px;font-weight:700}
+  footer ul{list-style:none;display:grid;gap:12px}
+  footer a{color:rgba(237,233,223,.78);font-size:14px}footer a:hover{color:#F3EFE5}
+  .foot-btm{border-top:1px solid var(--line-d);padding:22px 0;font-size:12px;color:rgba(237,233,223,.45);display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
   @media(max-width:820px){.foot-grid{grid-template-columns:1fr;gap:30px}}
 
-  .toast{position:fixed;bottom:26px;left:50%;transform:translateX(-50%) translateY(150px);background:var(--pine);color:#F3EFE6;padding:14px 26px;border-radius:2px;font-weight:600;font-size:14px;box-shadow:0 24px 50px -20px rgba(0,0,0,.5);transition:transform .32s ease;z-index:120}
+  /* telehealth reel */
+  .reel{background:var(--pearl)}
+  .reel-mask{position:relative;overflow:hidden;margin-top:6px}
+  .reel-mask:before,.reel-mask:after{content:"";position:absolute;top:0;bottom:0;width:110px;z-index:2;pointer-events:none}
+  .reel-mask:before{left:0;background:linear-gradient(90deg,var(--pearl),transparent)}
+  .reel-mask:after{right:0;background:linear-gradient(270deg,var(--pearl),transparent)}
+  .reel-track{display:flex;gap:20px;width:max-content;animation:reelscroll 52s linear infinite}
+  .reel-mask:hover .reel-track{animation-play-state:paused}
+  .reel-track img{width:326px;height:216px;object-fit:cover;border-radius:4px;flex:none;border:1px solid var(--line);box-shadow:var(--sh-sm)}
+  @keyframes reelscroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+  @media(max-width:600px){.reel-track img{width:242px;height:160px}.reel-track{animation-duration:40s}}
+  @media(prefers-reduced-motion:reduce){.reel-track{animation:none;overflow-x:auto;-webkit-overflow-scrolling:touch;width:100%;padding:0 34px}}
+
+  .toast{position:fixed;bottom:26px;left:50%;transform:translateX(-50%) translateY(150px);background:var(--ink);color:var(--pearl);padding:14px 26px;border-radius:3px;font-weight:600;font-size:14px;box-shadow:var(--sh);transition:transform .32s ease;z-index:120}
   .toast.on{transform:translateX(-50%) translateY(0)}
 </style>
 </head>
 <body>
 <a id="top"></a>
+<div class="anno"><div class="wrap"><span>Secure telepsychiatry in <b>Texas · Idaho · Washington · Oregon</b></span><span>· Not for emergencies — call 911 or 988</span></div></div>
 <header>
   <div class="wrap"><nav>
     <a href="#top" class="brand" aria-label="Avanelle Psychiatry">
       <span class="bn">Avanelle</span><small>Psychiatry &middot; Telehealth</small>
     </a>
     <div class="navlinks" id="navlinks">
-      <a href="#philosophy">Philosophy</a>
       <a href="#care">Care</a>
-      <a href="#telehealth">Telehealth</a>
-      <a href="#provider">About</a>
-      <a href="#book">Contact</a>
+      <a href="#approach">Our approach</a>
+      <a href="#provider">Your provider</a>
+      <a href="#faq">Questions</a>
+      <a href="#book">Begin care</a>
       <a class="navphone-m" href="tel:9723029933">Call (972) 302-9933</a>
     </div>
     <div class="navcta">
       <span class="navphone">(972) 302-9933</span>
-      <a href="#book" class="btn btn-pine">Begin your care</a>
+      <a href="#book" class="btn btn-ink">Begin care</a>
     </div>
   </nav></div>
 </header>
-<button id="menuBtn" aria-label="Open menu" aria-expanded="false" style="display:none;position:fixed;top:19px;right:20px;z-index:70;width:44px;height:44px;align-items:center;justify-content:center;border:1px solid #E2D9C7;background:#FBF8F1;border-radius:3px;cursor:pointer;padding:0;box-shadow:0 10px 26px -14px rgba(28,42,33,.55)"><i></i></button>
+<button id="menuBtn" aria-label="Open menu" aria-expanded="false" style="display:none;position:fixed;top:52px;right:20px;z-index:70;width:44px;height:44px;align-items:center;justify-content:center;border:1px solid #E4DED0;background:#FBF9F3;border-radius:3px;cursor:pointer;padding:0;box-shadow:0 10px 26px -14px rgba(20,22,24,.55)"><i></i></button>
 
 <!-- HERO -->
 <section class="hero">
   <div class="wrap"><div class="hero-grid">
     <div>
-      <span class="kick">Now welcoming new patients &middot; Arlington, TX</span>
-      <h1>Room to breathe.<br><em>Space to heal.</em></h1>
-      <p class="lead">Unhurried, whole-person psychiatric care and therapy for adults &mdash; by secure telehealth, from the calm of your own home.</p>
+      <span class="kick">Thoughtful psychiatric care</span>
+      <h1>Care that sees the <em>whole picture.</em></h1>
+      <p class="lead">Avanelle offers calm, evidence-informed psychiatric care that listens before it labels &mdash; and builds a treatment plan around your life, not just your symptoms.</p>
+      <div class="serve">
+        <span><b>Who</b> &nbsp;Children, teens &amp; adults</span>
+        <span><b>How</b> &nbsp;Private, secure telehealth</span>
+        <span><b>Where</b> &nbsp;TX · ID · WA · OR</span>
+      </div>
       <div class="hero-cta">
-        <a href="#book" class="btn btn-pine">Begin your care</a>
-        <a href="tel:9723029933" class="tlink">Call or text</a>
+        <a href="#book" class="btn btn-gold">Begin care</a>
+        <a href="#care" class="tlink">Explore our care</a>
       </div>
     </div>
     <div class="hero-media">
-      <div class="frame"><img src="assets/sr-hero.jpg" alt="A person resting in warm light by a window" loading="eager"></div>
-      <div class="cap">Secure video visits, across Texas.</div>
+      <div class="frame"><img src="assets/sr-hero.jpg" alt="A person in a calm, reflective moment in warm light" loading="eager"></div>
+      <div class="cap">Private, secure telehealth &mdash; on your schedule.</div>
     </div>
   </div></div>
 </section>
 
 <!-- PHILOSOPHY -->
-<section class="sec philo" id="philosophy">
-  <div class="wrap narrow center">
-    <span class="eyebrow">Our philosophy</span>
-    <div class="rule"></div>
-    <h2>Care begins with being <em>truly heard.</em> We take the time to understand your story, and build treatment around the whole person &mdash; never a checklist of symptoms.</h2>
-    <p>Every visit is calm, private and free of judgment. Whether that means therapy, thoughtful medication management, or both, we walk it with you &mdash; at a pace that feels human.</p>
-  </div>
-</section>
-
-<!-- APPROACH -->
-<section class="sec appr" id="approach">
-  <div class="wrap">
-    <div class="head">
-      <span class="eyebrow">Our approach</span>
-      <div class="rule"></div>
-      <h2>Considered care, without the rush</h2>
-    </div>
-    <div class="cols">
-      <div class="col"><div class="n">Unhurried</div><h3>Time to listen</h3><p>Real space to understand what you&rsquo;re experiencing &mdash; never rushed, never a number.</p></div>
-      <div class="col"><div class="n">Affirming</div><h3>Free of judgment</h3><p>A safe, welcoming space for every person, story and season of life.</p></div>
-      <div class="col"><div class="n">Evidence-based</div><h3>Care you help shape</h3><p>Thoughtful, proven treatment and clear plans you&rsquo;re part of, every step.</p></div>
-    </div>
-  </div>
-</section>
-
-<!-- CARE -->
-<section class="sec care" id="care">
-  <div class="wrap">
-    <div class="narrow center">
-      <span class="eyebrow">How we can help</span>
-      <div class="rule"></div>
-      <h2>Care for the whole you</h2>
-    </div>
-    <div class="svc">
-      <div class="item"><h3>Psychiatric evaluation</h3><p>A warm, thorough first conversation to understand what you&rsquo;re experiencing and shape a clear path forward.</p></div>
-      <div class="item"><h3>Medication management</h3><p>Careful, evidence-based prescribing with close, gentle follow-up so treatment truly works for you.</p></div>
-      <div class="item"><h3>Therapy &amp; counseling</h3><p>Supportive, goal-focused therapy for anxiety, depression, stress, trauma and life transitions.</p></div>
-      <div class="item"><h3>Telehealth visits</h3><p>Secure, convenient virtual care from the comfort of home &mdash; anywhere in Texas.</p></div>
-      <div class="item"><h3>Ongoing support</h3><p>Regular, unhurried check-ins that adapt as you grow and your needs change.</p></div>
-      <div class="item"><h3>Whole-person care</h3><p>We care for mind, body and life together &mdash; with empathy, respect and real continuity.</p></div>
-    </div>
-    <p class="focus"><b>Areas of focus</b> &nbsp;&mdash;&nbsp; anxiety &middot; depression &middot; ADHD &middot; bipolar &middot; panic &middot; stress &amp; burnout &middot; insomnia &middot; grief &middot; life transitions</p>
-  </div>
-</section>
-
-<!-- TELEHEALTH -->
-<section class="sec" id="telehealth">
-  <div class="wrap"><div class="tele-grid">
-    <div class="tele-media"><img src="assets/sr-tele1.jpg" alt="A person relaxed at home on a secure video visit" loading="lazy"></div>
+<section class="sec philo" id="approach">
+  <div class="wrap"><div class="philo-grid">
     <div>
-      <span class="eyebrow">Telehealth care</span>
+      <span class="eyebrow">Care, made coherent</span>
       <div class="rule"></div>
-      <h2>From the comfort of home</h2>
-      <p class="lead" style="margin-top:18px;max-width:44ch">No waiting room, no commute &mdash; just calm, private, expert care wherever you feel most at ease.</p>
-      <div class="steps">
-        <div class="step"><div class="n">i</div><div><h4>Request a visit</h4><p>Send a quick note and we&rsquo;ll reply with times that fit your life.</p></div></div>
-        <div class="step"><div class="n">ii</div><div><h4>Connect securely</h4><p>Join a private video visit from your phone, tablet or computer.</p></div></div>
-        <div class="step"><div class="n">iii</div><div><h4>Feel supported</h4><p>Leave with a clear plan and steady, gentle follow-up care.</p></div></div>
-      </div>
+      <h2>You are more than a checklist of symptoms.</h2>
+      <p>Mental health care can feel fragmented &mdash; one appointment for a diagnosis, another for medication, and too little time spent understanding what is actually changing.</p>
+      <p>At Avanelle, we slow the process down enough to make it useful. We look at symptoms, functioning, health history, relationships, sleep, stress, culture, and the goals that matter to you. Then we make decisions together.</p>
     </div>
+    <div class="philo-media"><img src="assets/sr-tele1.jpg" alt="A person meeting a provider by secure video from home" loading="lazy"></div>
   </div></div>
 </section>
 
-<!-- INTERLUDE / TESTIMONIAL -->
-<section class="band">
-  <img src="assets/sr-forest.jpg" alt="Soft morning light through a quiet forest">
-  <div class="veil"></div>
-  <div class="inner">
-    <div class="q">&ldquo;For the first time, I felt genuinely listened to &mdash; care that was calm, kind and never rushed. It made all the difference.&rdquo;</div>
-    <div class="by">A patient of Avanelle Psychiatry</div>
+<!-- SERVICES -->
+<section class="sec" id="care">
+  <div class="wrap">
+    <div class="narrow center">
+      <span class="eyebrow">Clear pathways. Personal care.</span>
+      <div class="rule"></div>
+      <h2>How we can help</h2>
+    </div>
+    <div class="svc">
+      <div class="item"><div class="no">01</div><div><h3>Psychiatric evaluation</h3><p>A careful first visit to understand your history, current concerns, strengths, safety, and goals before building a diagnostic picture.</p><a href="#book" class="tlink">Start with an evaluation</a></div></div>
+      <div class="item"><div class="no">02</div><div><h3>Medication management</h3><p>Conservative, measurement-guided prescribing with clear expectations, side-effect monitoring, and regular reassessment of real-life benefit.</p><a href="#approach" class="tlink">Our prescribing approach</a></div></div>
+      <div class="item"><div class="no">03</div><div><h3>ADHD &amp; attention care</h3><p>Thoughtful assessment and ongoing care that considers sleep, anxiety, mood, executive function, health history, and daily demands.</p><a href="#book" class="tlink">Explore ADHD care</a></div></div>
+      <div class="item"><div class="no">04</div><div><h3>Mood, anxiety &amp; trauma care</h3><p>Individualized support for depression, anxiety, bipolar-spectrum concerns, trauma-related symptoms, sleep, and life transitions.</p><a href="#book" class="tlink">Find the right next step</a></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- TELEHEALTH REEL -->
+<section class="sec reel" id="telehealth">
+  <div class="wrap narrow center" style="margin-bottom:38px">
+    <span class="eyebrow">Telehealth care</span>
+    <div class="rule"></div>
+    <h2>Care from wherever you are</h2>
+    <p class="lead" style="margin-top:12px">Private, secure video visits &mdash; no waiting room, no commute. Just calm, expert care in the space you feel most at ease.</p>
+  </div>
+  <div class="reel-mask">
+    <div class="reel-track">
+      <img src="assets/sr-tele1.jpg" alt="A person on a relaxed video visit at home" loading="lazy">
+      <img src="assets/ph-7195090.jpg" alt="A clinician meeting a patient by secure video" loading="lazy">
+      <img src="assets/sr-tele3.jpg" alt="A person smiling during an online visit" loading="lazy">
+      <img src="assets/ph-3958401.jpg" alt="Joining a telehealth session on a laptop" loading="lazy">
+      <img src="assets/ph-7195115.jpg" alt="A telehealth consultation" loading="lazy">
+      <img src="assets/sr-tele2.jpg" alt="A relaxed video visit from a cozy home" loading="lazy">
+      <img src="assets/ph-8376211.jpg" alt="A doctor consultation on a tablet" loading="lazy">
+      <img src="assets/ph-5867189.jpg" alt="A provider appearing on a laptop screen" loading="lazy">
+      <img src="assets/ph-4240602.jpg" alt="Taking notes during a video visit" loading="lazy">
+      <img src="assets/ph-7195076.jpg" alt="A secure telemedicine session" loading="lazy">
+      <!-- duplicate set for a seamless loop -->
+      <img src="assets/sr-tele1.jpg" alt="" aria-hidden="true" loading="lazy">
+      <img src="assets/ph-7195090.jpg" alt="" aria-hidden="true" loading="lazy">
+      <img src="assets/sr-tele3.jpg" alt="" aria-hidden="true" loading="lazy">
+      <img src="assets/ph-3958401.jpg" alt="" aria-hidden="true" loading="lazy">
+      <img src="assets/ph-7195115.jpg" alt="" aria-hidden="true" loading="lazy">
+      <img src="assets/sr-tele2.jpg" alt="" aria-hidden="true" loading="lazy">
+      <img src="assets/ph-8376211.jpg" alt="" aria-hidden="true" loading="lazy">
+      <img src="assets/ph-5867189.jpg" alt="" aria-hidden="true" loading="lazy">
+      <img src="assets/ph-4240602.jpg" alt="" aria-hidden="true" loading="lazy">
+      <img src="assets/ph-7195076.jpg" alt="" aria-hidden="true" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<!-- PRESCRIBING (glossy dark) -->
+<section class="sec dark">
+  <div class="wrap center">
+    <span class="eyebrow">A steadier way forward</span>
+    <div class="rule" style="margin:20px auto"></div>
+    <h2>Thoughtful prescribing. <em style="font-style:italic;color:var(--gold2)">Never rushed.</em></h2>
+    <p class="rx-quote"><span class="mk">&ldquo;</span>Start low, titrate deliberately, measure functional benefit, and stop escalation when benefit plateaus.<span class="mk">&rdquo;</span></p>
+    <div class="principles" style="text-align:left">
+      <div class="principle"><div class="no">01</div><h4>Listen before labeling</h4><p>Your story and functioning matter as much as a symptom score.</p></div>
+      <div class="principle"><div class="no">02</div><h4>Choose with intention</h4><p>Recommendations include the why, the alternatives, the expected benefit, and the tradeoffs.</p></div>
+      <div class="principle"><div class="no">03</div><h4>Measure what changes</h4><p>We track relief, function, side effects, sleep, and quality of life &mdash; not dose alone.</p></div>
+      <div class="principle"><div class="no">04</div><h4>Coordinate the whole plan</h4><p>When therapy, primary care, testing, or a higher level of support is needed, we make the next step clear.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONDITIONS -->
+<section class="sec cond">
+  <div class="wrap center">
+    <span class="eyebrow">Areas supported</span>
+    <div class="rule"></div>
+    <h2>Steady support, across concerns</h2>
+    <div class="chips">
+      <span>Depression</span><span>Anxiety</span><span>ADHD</span><span>Mood disorders</span><span>Trauma</span><span>Sleep concerns</span><span>Recovery support</span>
+    </div>
   </div>
 </section>
 
 <!-- PROVIDER -->
 <section class="sec prov" id="provider">
   <div class="wrap"><div class="prov-grid">
-    <div class="prov-photo"><span>A</span></div>
+    <div class="prov-photo"><span>CL</span></div>
     <div>
-      <span class="eyebrow">Meet your provider</span>
-      <h3>[Provider Name], PMHNP-BC</h3>
-      <div class="cred">Board-Certified Psychiatric Mental Health Nurse Practitioner</div>
-      <p>Your provider at Avanelle Psychiatry is a board-certified Psychiatric Mental Health Nurse Practitioner devoted to compassionate, evidence-based care &mdash; walking with adults through anxiety, depression, ADHD and mood concerns with warmth and patience.</p>
-      <p>Care here is a partnership. We listen closely, honor your story, and build a plan that fits your goals.</p>
-      <div class="tags"><b>Focus:</b> anxiety &middot; depression &middot; ADHD &middot; mood &middot; medication management &middot; telehealth</div>
-      <a href="#book" class="tlink">Begin your care</a>
+      <span class="eyebrow">Your provider</span>
+      <h3>Cynthia Love, APRN, MSN, PMHNP-BC</h3>
+      <div class="cred">Psychiatric Mental Health Nurse Practitioner</div>
+      <p>A psychiatric mental health nurse practitioner committed to clinically grounded care that remains deeply human. Cynthia cares for children, adolescents, and adults.</p>
+      <p>Her clinical background includes psychiatric emergency care, critical care, healthcare leadership, and telehealth nursing &mdash; experience that shaped her calm, thorough, and safety-minded approach. She works collaboratively, explains treatment choices plainly, and believes good psychiatric care should help people function better in the life they actually live.</p>
+      <div class="creds"><span>Board-certified PMHNP</span><span>Trauma-informed care</span><span>Lifespan psychiatry</span></div>
     </div>
   </div></div>
 </section>
 
-<!-- BOOKING -->
-<section class="sec care" id="book" style="border-top:1px solid var(--line)">
+<!-- FAQ -->
+<section class="sec" id="faq">
   <div class="wrap">
-    <div class="narrow center" style="margin-bottom:52px">
-      <span class="eyebrow">Begin your care</span>
+    <div class="narrow center">
+      <span class="eyebrow">Good questions matter</span>
       <div class="rule"></div>
-      <h2>Reach out &mdash; we&rsquo;ll take it from here</h2>
+      <h2>Before your first visit</h2>
+    </div>
+    <div class="faq-wrap">
+      <details><summary>Is Avanelle a physician practice?</summary><p>No. Avanelle is a psychiatric-mental health advanced practice nursing practice led by Cynthia Love, APRN, MSN, PMHNP-BC. Services are provided within applicable state licensure, prescriptive-authority, and professional nursing requirements.</p></details>
+      <details><summary>Are visits fully online?</summary><p>Yes. Avanelle is designed as a telehealth-first practice. You must be physically located in a state where your clinician is licensed at the time of the visit. Availability may vary by state and service.</p></details>
+      <details><summary>Will medication always be prescribed?</summary><p>No. Medication is one possible part of care, not a guaranteed outcome. Recommendations follow a complete assessment, shared decision-making, clinical appropriateness, and applicable laws.</p></details>
+      <details><summary>Does Avanelle prescribe controlled medication?</summary><p>Controlled medications may be considered only when clinically appropriate and legally permitted. Decisions require clear treatment goals, careful monitoring, and regular reassessment. A first visit never guarantees a prescription.</p></details>
+      <details><summary>Can Avanelle help in a crisis?</summary><p>Avanelle does not provide emergency or crisis services. If you may harm yourself or someone else, call 911, call or text 988, or go to the nearest emergency department.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- BOOKING -->
+<section class="sec philo" id="book" style="border-top:1px solid var(--line)">
+  <div class="wrap">
+    <div class="narrow center" style="margin-bottom:50px">
+      <span class="eyebrow">Begin with clarity</span>
+      <div class="rule"></div>
+      <h2>Find your starting point</h2>
+      <p class="lead" style="margin-top:14px">Tell us a little about what you need &mdash; we&rsquo;ll follow up with the most sensible first step.</p>
     </div>
     <div class="book-grid">
       <div class="contact-card">
         <h3>We&rsquo;re here for you</h3>
-        <div class="sub">Warm, confidential support by telehealth, across Texas.</div>
+        <div class="sub">Private, secure telehealth across TX, ID, WA &amp; OR.</div>
         <div class="r"><span class="k">Phone</span><a href="tel:9723029933">(972) 302-9933</a></div>
         <div class="r"><span class="k">Email</span><a href="mailto:info@avanellepsychiatry.com">info@avanellepsychiatry.com</a></div>
         <div class="r"><span class="k">Fax</span><span>(833) 672-3425</span></div>
-        <div class="r"><span class="k">Office</span><span>944 Grasswood Ct<br>Arlington, TX 76017</span></div>
-        <div class="crisis">In a crisis? Call or text <b style="color:#F3EFE6">988</b> (Suicide &amp; Crisis Lifeline) or dial 911.</div>
+        <div class="r"><span class="k">Office</span><span>944 Grasswood Ct, Arlington, TX 76017</span></div>
+        <div class="r"><span class="k">Hours</span><span>Mon&ndash;Fri 9:00&ndash;6:30 CT<br>Sat 10:00&ndash;2:30 CT &middot; Sun closed</span></div>
+        <div class="crisis">Avanelle does not provide emergency services. In a crisis, call 911, or call or text <b style="color:#F3EFE5">988</b>.</div>
       </div>
       <div class="form-card">
         <div class="form-head"><h3>Request an appointment</h3><p>A calm first step &mdash; we reply as soon as we can.</p></div>
         <div class="form-body">
           <form id="bookForm" novalidate>
-            <div class="fld"><label>What brings you in? <span class="req">*</span></label>
+            <div class="frow">
+              <div class="fld"><label>Your state <span class="req">*</span></label>
+                <select id="state" required>
+                  <option value="">Select&hellip;</option>
+                  <option>Texas</option><option>Idaho</option><option>Washington</option><option>Oregon</option><option>Another state</option>
+                </select>
+              </div>
+              <div class="fld"><label>Who is seeking care?</label>
+                <select id="who"><option value="">Select&hellip;</option><option>A child</option><option>A teenager</option><option>An adult</option></select>
+              </div>
+            </div>
+            <div class="fld"><label>What best describes the need? <span class="req">*</span></label>
               <select id="reason" required>
                 <option value="">Select a reason&hellip;</option>
-                <option>New patient &mdash; psychiatric evaluation</option>
-                <option>Medication management</option>
-                <option>Therapy / counseling</option>
-                <option>Telehealth visit</option>
-                <option>Second opinion</option>
-                <option>Other</option>
+                <option>First psychiatric evaluation</option>
+                <option>Medication review or ongoing management</option>
+                <option>ADHD or attention concerns</option>
+                <option>Mood, anxiety, trauma, or sleep concerns</option>
+                <option>Substance use or recovery support</option>
               </select>
             </div>
             <div class="fld"><label>Full name <span class="req">*</span></label><input id="name" required placeholder="Your name"></div>
@@ -360,18 +446,14 @@
               <div class="fld"><label>Phone <span class="req">*</span></label><input id="phone" type="tel" required placeholder="(___) ___-____"></div>
               <div class="fld"><label>Email</label><input id="email" type="email" placeholder="you@email.com"></div>
             </div>
-            <div class="frow">
-              <div class="fld"><label>Preferred date</label><input id="date" type="date"></div>
-              <div class="fld"><label>Preferred time</label><select id="time"><option value="">Any</option><option>Morning</option><option>Afternoon</option><option>Evening</option></select></div>
-            </div>
-            <div class="fld"><label>Anything you&rsquo;d like us to know?</label><textarea id="message" placeholder="Insurance, concerns, the best way to reach you&hellip; (optional)"></textarea></div>
-            <label class="consent"><input type="checkbox" id="consent" required> I agree to be contacted about my request. This form isn&rsquo;t for emergencies &mdash; in a crisis, call or text 988 or dial 911.</label>
-            <button type="submit" class="btn btn-pine" style="width:100%;justify-content:center" id="bookBtn">Send my request</button>
-            <p class="book-note">Sent securely to our office. We reply as soon as we can.</p>
+            <div class="fld"><label>Anything you&rsquo;d like us to know?</label><textarea id="message" placeholder="A little about what&rsquo;s bringing you in&hellip; (optional)"></textarea></div>
+            <label class="consent"><input type="checkbox" id="consent" required> I agree to be contacted about my request. This isn&rsquo;t for emergencies &mdash; in a crisis, call 911 or call/text 988.</label>
+            <button type="submit" class="btn btn-ink" style="width:100%;justify-content:center" id="bookBtn">Show my next step</button>
+            <p class="book-note">Sent securely to our office. No health information is stored on this page.</p>
           </form>
           <div id="book-ok">
             <h4>Your request is on its way</h4>
-            <p style="color:var(--muted)">Thank you for reaching out &mdash; we&rsquo;ll be in touch soon. In a crisis, call or text 988.</p>
+            <p style="color:var(--muted)">Thank you for reaching out &mdash; we&rsquo;ll be in touch with a sensible first step. In a crisis, call 911 or 988.</p>
             <div class="actions">
               <a id="smsBtn" class="btn btn-line" href="#">Also text us these details</a>
               <a href="tel:9723029933" class="btn btn-line">Call the office</a>
@@ -388,26 +470,27 @@
   <div class="wrap foot-grid">
     <div>
       <a href="#top" style="display:inline-block"><span class="bn">Avanelle<small>Psychiatry &middot; Telehealth</small></span></a>
-      <p>Room to breathe, space to heal. Calm, whole-person psychiatric care and therapy for adults, by secure telehealth across Texas.</p>
+      <p>Advanced practice registered nursing services in psychiatric-mental health. Care that sees the whole picture &mdash; calm, evidence-informed telepsychiatry.</p>
     </div>
     <div><h4>Explore</h4><ul>
-      <li><a href="#philosophy">Philosophy</a></li>
       <li><a href="#care">Care</a></li>
-      <li><a href="#telehealth">Telehealth</a></li>
-      <li><a href="#provider">About</a></li>
+      <li><a href="#approach">Our approach</a></li>
+      <li><a href="#provider">Your provider</a></li>
+      <li><a href="#faq">Questions</a></li>
       <li><a href="blog.html">Blog</a></li>
-      <li><a href="#book">Begin your care</a></li>
+      <li><a href="#book">Begin care</a></li>
     </ul></div>
     <div><h4>Contact</h4><ul>
       <li><a href="tel:9723029933">(972) 302-9933</a></li>
       <li><a href="mailto:info@avanellepsychiatry.com">info@avanellepsychiatry.com</a></li>
       <li>Fax (833) 672-3425</li>
-      <li>944 Grasswood Ct, Arlington, TX 76017</li>
+      <li>Serving TX · ID · WA · OR by telehealth</li>
+      <li>Mon&ndash;Fri 9:00&ndash;6:30 CT · Sat 10:00&ndash;2:30 CT</li>
     </ul></div>
   </div>
   <div class="wrap foot-btm">
     <span>© 2026 Avanelle Psychiatry · avanellepsychiatry.com</span>
-    <span>In a crisis, call or text 988 (Suicide &amp; Crisis Lifeline)</span>
+    <span>Not for emergencies · Call 911 or 988</span>
   </div>
 </footer>
 
@@ -421,17 +504,17 @@
   $('bookForm').addEventListener('submit', async function(e){
     e.preventDefault();
     if(!$('consent').checked){ toast('Please check the consent box to continue.'); return; }
-    var data={ reason:$('reason').value, name:$('name').value.trim(), phone:$('phone').value.trim(),
-      email:$('email').value.trim(), date:$('date').value, time:$('time').value, message:$('message').value.trim() };
-    if(!data.reason||!data.name||!data.phone){ toast('Please fill in the required fields.'); return; }
+    var data={ state:$('state').value, who:$('who').value, reason:$('reason').value, name:$('name').value.trim(),
+      phone:$('phone').value.trim(), email:$('email').value.trim(), message:$('message').value.trim() };
+    if(!data.state||!data.reason||!data.name||!data.phone){ toast('Please fill in the required fields.'); return; }
     var btn=$('bookBtn'); btn.textContent='Sending…'; btn.disabled=true;
     var ok=false;
     try{ if(window.RMBH && RMBH.submitBooking) ok = await RMBH.submitBooking(data); }catch(err){}
     if(window.RMBH){ if(RMBH.smsHref) $('smsBtn').href = RMBH.smsHref(data);
       if(!ok && RMBH.mailtoHref){
-        $('book-ok').querySelector('p').innerHTML = 'Thank you! Please tap a button below to send your request to our office. In a crisis, call or text 988.';
+        $('book-ok').querySelector('p').innerHTML = 'Thank you! Please tap a button below to send your request to our office. In a crisis, call 911 or 988.';
         $('book-ok').querySelector('.actions').insertAdjacentHTML('afterbegin',
-          '<a class="btn btn-pine" href="'+RMBH.mailtoHref(data)+'">Email the office</a>');
+          '<a class="btn btn-ink" href="'+RMBH.mailtoHref(data)+'">Email the office</a>');
       }
     }
     $('bookForm').style.display='none'; $('book-ok').style.display='block';
@@ -455,7 +538,7 @@
   (function(){
     var b=$('menuBtn'), h=document.querySelector('header'), nl=$('navlinks');
     if(!b||!h) return;
-    var mq=window.matchMedia('(max-width:960px)');
+    var mq=window.matchMedia('(max-width:980px)');
     function sync(){ b.style.display = mq.matches ? 'inline-flex' : 'none'; if(!mq.matches){ h.classList.remove('open'); b.setAttribute('aria-expanded','false'); } }
     sync();
     if(mq.addEventListener){ mq.addEventListener('change',sync); } else if(mq.addListener){ mq.addListener(sync); }
